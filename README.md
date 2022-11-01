@@ -23,6 +23,7 @@ This is an API for a social network web application where users can share their 
 This application uses Express, Node, MongoDB and Mongoose to allow users, thoughts, friend lists and thought reactions to be created, updated, and deleted.
 
 Watch a walkthrough video:
+https://drive.google.com/file/d/1rgLXAfm87KiaQ208Kq-dAa_KgdyMZbof/view
 
 ## Installation
 
