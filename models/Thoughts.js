@@ -42,6 +42,10 @@ const ThoughtsSchema = new Schema(
       minlength: 1,
       maxlength: 280,
     },
+    username: {
+      type: String,
+      required: true,
+    },
     createdAt: {
       type: Date,
       default: Date.now,
@@ -49,10 +53,7 @@ const ThoughtsSchema = new Schema(
       get: createdAtVal =>
         moment(createdAtVal).format("MMM DD, YYYY [at] hh:mm a"),
     },
-    username: {
-      type: String,
-      required: true,
-    },
+
     // Use ReactionsSchema to validate data
     reactions: [ReactionsSchema],
   },

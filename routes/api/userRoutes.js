@@ -15,7 +15,7 @@ const {
 // GET/POST routes that point to api/users
 router.route("/").get(getAllUsers).post(createUsers);
 
-// GET/PUT/DELETE routes that point to /api/uers/:id
+// GET/PUT/DELETE routes that point to /api/users/:id
 router.route("/:id").get(getUsersById).put(updateUsers).delete(deleteUsers);
 
 // POST/DELETE routes that point to /api/users/:userId/friends/:friendId

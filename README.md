@@ -40,21 +40,21 @@ Watch a walkthrough video:
 - Get user by ID: `GET /api/users/:id`
 - Update a user: `PUT /api/users/:id`
 - Delete a user: `DELETE /api/users/:id`
-- Add a friend: `PUT /api/users/:userId/friends/:friendId`
-- Delete a friend: `DELETE /api/users/:userId/friends/:friendId`
+- Add a friend: `PUT /api/users/:id/friends/:friendId`
+- Delete a friend: `DELETE /api/users/:id/friends/:friendId`
 
 **Thought**
 
 - Get all thoughts: `GET /api/thoughts`
-- Create a thought: `POST /api/thoughts`
+- Create a thought: `POST /api/thoughts/:userId`
 - Get thought by ID: `GET /api/thoughts/:id`
 - Update a thought: `PUT /api/thoughts/:id`
 - Delete a thought: `DELETE /api/thoughts/:id`
 
 **Reaction**
 
-- Add a reaction: `PUT /api/thoughts/:id/reactions`
-- Delete a reaction: `DELETE /api/thoughts/:id/reactions`
+- Add a reaction: `PUT /api/thoughts/:thoughtId/reactions`
+- Delete a reaction: `DELETE /api/thoughts/:thoughtId/reactions/:reactionId`
 
 ## Contributing
 
